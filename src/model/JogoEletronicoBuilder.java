@@ -13,36 +13,36 @@ public class JogoEletronicoBuilder extends ProdutoBuilder {
 	}
 
 	@Override
-	public ProdutoBuilder addCategoriaProduto(CategoriaProduto categoria) {
+	public JogoEletronicoBuilder addCategoriaProduto(CategoriaProduto categoria) {
 		this.jogo.setCategoria(categoria);
 		return this;
 	}
 
 	@Override
-	public ProdutoBuilder addNomeProduto(String nome) {
+	public JogoEletronicoBuilder addNomeProduto(String nome) {
 		this.jogo.setNome(nome);
 		return this;
 	}
 
 	@Override
-	public ProdutoBuilder addValorProduto(double valor, String moeda) {
+	public JogoEletronicoBuilder addValorProduto(double valor, String moeda) {
 		this.jogo.setValor(valor);
 		this.jogo.setMoeda(moeda);
 		return this;
 	}
 
-	public ProdutoBuilder addTituloJogo(String titulo) {
+	public JogoEletronicoBuilder addTituloJogo(String titulo) {
 		this.jogo.setTitulo(titulo);
 		return this;
 	}
 	
-	public ProdutoBuilder addTipoVideogameJogo(TipoVideogame videogame) {
+	public JogoEletronicoBuilder addTipoVideogameJogo(TipoVideogame videogame) {
 		this.jogo.setVideogame(videogame);
 		return this;
 	}
 	
 	@Override
-	public Produto get() {
+	public JogoEletronico get() {
 		return this.jogo;
 	}
 

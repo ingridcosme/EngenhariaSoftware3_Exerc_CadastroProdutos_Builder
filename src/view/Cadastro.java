@@ -10,6 +10,7 @@ import model.EquipArmazenamento;
 import model.EquipArmazenamentoBuilder;
 import model.JogoEletronico;
 import model.JogoEletronicoBuilder;
+import model.Produto;
 import model.TamanhoCamiseta;
 import model.TipoCalcado;
 import model.TipoEquipamento;
@@ -58,9 +59,9 @@ public class Cadastro {
 //		================================== ADICIONANDO OS CALCADOS ==================================
 		
 		try {
-			Calcado calcado1 = (Calcado) ((CalcadoBuilder) ((CalcadoBuilder) CalcadoBuilder.builder()
-					.addCorCalcado("cinza"))
-					.addTamanhoCalcado(40))
+			Calcado calcado1 = CalcadoBuilder.builder()
+					.addCorCalcado("cinza")
+					.addTamanhoCalcado(40)
 					.addTipoCalcado(TipoCalcado.SOCIAL)
 					.addCategoriaProduto(CategoriaProduto.CALCADO)
 					.addNomeProduto("Calcado C1")
@@ -73,9 +74,9 @@ public class Cadastro {
 		}
 		
 		try {
-			Calcado calcado2 = (Calcado) ((CalcadoBuilder) ((CalcadoBuilder) CalcadoBuilder.builder()
-					.addTamanhoCalcado(38))
-					.addCorCalcado("preto"))
+			Calcado calcado2 = CalcadoBuilder.builder()
+					.addTamanhoCalcado(38)
+					.addCorCalcado("preto")
 					.addTipoCalcado(TipoCalcado.TENIS)
 					.addCategoriaProduto(CategoriaProduto.CALCADO)
 					.addNomeProduto("Calcado C2")
@@ -88,9 +89,9 @@ public class Cadastro {
 		}
 		
 		try {
-			Calcado calcado3 = (Calcado) ((CalcadoBuilder) ((CalcadoBuilder) CalcadoBuilder.builder()
-					.addTamanhoCalcado(42))
-					.addCorCalcado("branco"))
+			Calcado calcado3 = CalcadoBuilder.builder()
+					.addTamanhoCalcado(42)
+					.addCorCalcado("branco")
 					.addTipoCalcado(TipoCalcado.TENIS)
 					.addCategoriaProduto(CategoriaProduto.CALCADO)
 					.addNomeProduto("Calcado C3")
@@ -104,8 +105,8 @@ public class Cadastro {
 		
 //		================================== ADICIONANDO OS JOGOS ==================================
 		
-		JogoEletronico jogo1 = (JogoEletronico) ((JogoEletronicoBuilder) JogoEletronicoBuilder.builder()
-				.addTituloJogo("Call of Duty Black Ops Cold War"))
+		JogoEletronico jogo1 = JogoEletronicoBuilder.builder()
+				.addTituloJogo("Call of Duty Black Ops Cold War")
 				.addTipoVideogameJogo(TipoVideogame.PLAYSTATION)
 				.addCategoriaProduto(CategoriaProduto.JOGOELETRONICO)
 				.addNomeProduto("Jogo J1")
@@ -114,8 +115,8 @@ public class Cadastro {
 		
 		pCont.adicionarProdutoNaLista(jogo1);
 		
-		JogoEletronico jogo2 = (JogoEletronico) ((JogoEletronicoBuilder) JogoEletronicoBuilder.builder()
-				.addTituloJogo("The Amazing Spider - Man 2"))
+		JogoEletronico jogo2 = JogoEletronicoBuilder.builder()
+				.addTituloJogo("The Amazing Spider - Man 2")
 				.addTipoVideogameJogo(TipoVideogame.XBOX)
 				.addCategoriaProduto(CategoriaProduto.JOGOELETRONICO)
 				.addNomeProduto("Jogo J2")
@@ -124,8 +125,8 @@ public class Cadastro {
 		
 		pCont.adicionarProdutoNaLista(jogo2);
 		
-		JogoEletronico jogo3 = (JogoEletronico) ((JogoEletronicoBuilder) JogoEletronicoBuilder.builder()
-				.addTituloJogo("Zelda Breath of the Wild"))
+		JogoEletronico jogo3 = JogoEletronicoBuilder.builder()
+				.addTituloJogo("Zelda Breath of the Wild")
 				.addTipoVideogameJogo(TipoVideogame.SWITCH)
 				.addCategoriaProduto(CategoriaProduto.JOGOELETRONICO)
 				.addNomeProduto("Jogo J3")
@@ -136,9 +137,9 @@ public class Cadastro {
 		
 //		================================== ADICIONANDO OS EQUIPAMENTOS PARA ARMAZENAMENTO ==================================
 		
-		EquipArmazenamento equipamento1 = (EquipArmazenamento) ((EquipArmazenamentoBuilder) ((EquipArmazenamentoBuilder) EquipArmazenamentoBuilder.builder()
-				.addTipoEqArmaz(TipoEquipamento.HDD))
-				.addCapacidadeEqArmaz(1, "TB"))
+		EquipArmazenamento equipamento1 = EquipArmazenamentoBuilder.builder()
+				.addTipoEqArmaz(TipoEquipamento.HDD)
+				.addCapacidadeEqArmaz(1, "TB")
 				.addFabricanteEqArmaz("Seagate")
 				.addCategoriaProduto(CategoriaProduto.EQUIPAMENTOPARAARMAZENAMENTO)
 				.addNomeProduto("Equipamento E1")
@@ -147,9 +148,9 @@ public class Cadastro {
 		
 		pCont.adicionarProdutoNaLista(equipamento1);
 		
-		EquipArmazenamento equipamento2 = (EquipArmazenamento) ((EquipArmazenamentoBuilder) ((EquipArmazenamentoBuilder) EquipArmazenamentoBuilder.builder()
-				.addTipoEqArmaz(TipoEquipamento.SSD))
-				.addCapacidadeEqArmaz(240, "GB"))
+		EquipArmazenamento equipamento2 = EquipArmazenamentoBuilder.builder()
+				.addTipoEqArmaz(TipoEquipamento.SSD)
+				.addCapacidadeEqArmaz(240, "GB")
 				.addFabricanteEqArmaz("Crucial")
 				.addCategoriaProduto(CategoriaProduto.EQUIPAMENTOPARAARMAZENAMENTO)
 				.addNomeProduto("Equipamento E2")
@@ -158,9 +159,9 @@ public class Cadastro {
 		
 		pCont.adicionarProdutoNaLista(equipamento2);
 		
-		EquipArmazenamento equipamento3 = (EquipArmazenamento) ((EquipArmazenamentoBuilder) ((EquipArmazenamentoBuilder) EquipArmazenamentoBuilder.builder()
-				.addTipoEqArmaz(TipoEquipamento.MS_NVME))
-				.addCapacidadeEqArmaz(250, "GB"))
+		EquipArmazenamento equipamento3 = EquipArmazenamentoBuilder.builder()
+				.addTipoEqArmaz(TipoEquipamento.MS_NVME)
+				.addCapacidadeEqArmaz(250, "GB")
 				.addFabricanteEqArmaz("Kingston")
 				.addCategoriaProduto(CategoriaProduto.EQUIPAMENTOPARAARMAZENAMENTO)
 				.addNomeProduto("Equipamento E3")

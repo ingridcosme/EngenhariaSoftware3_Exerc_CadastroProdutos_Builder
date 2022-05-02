@@ -13,42 +13,42 @@ public class EquipArmazenamentoBuilder extends ProdutoBuilder {
 	}
 
 	@Override
-	public ProdutoBuilder addCategoriaProduto(CategoriaProduto categoria) {
+	public EquipArmazenamentoBuilder addCategoriaProduto(CategoriaProduto categoria) {
 		this.equipamento.setCategoria(categoria);
 		return this;
 	}
 
 	@Override
-	public ProdutoBuilder addNomeProduto(String nome) {
+	public EquipArmazenamentoBuilder addNomeProduto(String nome) {
 		this.equipamento.setNome(nome);
 		return this;
 	}
 
 	@Override
-	public ProdutoBuilder addValorProduto(double valor, String moeda) {
+	public EquipArmazenamentoBuilder addValorProduto(double valor, String moeda) {
 		this.equipamento.setValor(valor);
 		this.equipamento.setMoeda(moeda);
 		return this;
 	}
 
-	public ProdutoBuilder addTipoEqArmaz(TipoEquipamento tipo) {
+	public EquipArmazenamentoBuilder addTipoEqArmaz(TipoEquipamento tipo) {
 		this.equipamento.setTipo(tipo);
 		return this;
 	}
 	
-	public ProdutoBuilder addCapacidadeEqArmaz(int capacidade, String grandezaCapacidade) {
+	public EquipArmazenamentoBuilder addCapacidadeEqArmaz(int capacidade, String grandezaCapacidade) {
 		this.equipamento.setCapacidade(capacidade);
 		this.equipamento.setGrandezaCapacidade(grandezaCapacidade);
 		return this;
 	}
 	
-	public ProdutoBuilder addFabricanteEqArmaz(String fabricante) {
+	public EquipArmazenamentoBuilder addFabricanteEqArmaz(String fabricante) {
 		this.equipamento.setFabricante(fabricante);
 		return this;
 	}
 	
 	@Override
-	public Produto get() {
+	public EquipArmazenamento get() {
 		return this.equipamento;
 	}
 

@@ -13,19 +13,19 @@ public class CamisetaBuilder extends ProdutoBuilder {
     }
 	
 	@Override
-	public ProdutoBuilder addCategoriaProduto(CategoriaProduto categoria) {
+	public CamisetaBuilder addCategoriaProduto(CategoriaProduto categoria) {
 		this.camiseta.setCategoria(categoria);
 		return this;
 	}
 	
 	@Override
-	public ProdutoBuilder addNomeProduto(String nome) {
+	public CamisetaBuilder addNomeProduto(String nome) {
 		this.camiseta.setNome(nome);
 		return this;
 	}
 	
 	@Override
-	public ProdutoBuilder addValorProduto(double valor, String moeda) {
+	public CamisetaBuilder addValorProduto(double valor, String moeda) {
 		this.camiseta.setValor(valor);
 		this.camiseta.setMoeda(moeda);
 		return this;
@@ -47,7 +47,7 @@ public class CamisetaBuilder extends ProdutoBuilder {
 	}
 
 	@Override
-	public Produto get() {
+	public Camiseta get() {
 		return this.camiseta;
 	}
 	

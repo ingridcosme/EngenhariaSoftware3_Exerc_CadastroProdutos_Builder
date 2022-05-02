@@ -2,7 +2,7 @@ package model;
 
 public class Produto {
 
-	private static int SEQUENCIAL = 1;
+	private static int SEQUENCIAL;
 	
 	protected CategoriaProduto categoria;
 	protected int codigo;
