@@ -23,7 +23,7 @@ public class Cadastro {
 		
 //		================================== ADICIONANDO AS CAMISETAS ==================================
 		
-		Camiseta camiseta1 = (Camiseta) CamisetaBuilder.builder()
+		Camiseta camiseta1 = CamisetaBuilder.builder()
 				.addTamanhoCamiseta(TamanhoCamiseta.GG)
 				.addCorCamiseta("azul")
 				.addMarcaCamiseta("Off")
@@ -34,7 +34,7 @@ public class Cadastro {
 		
 		pCont.adicionarProdutoNaLista(camiseta1);
 	
-		Camiseta camiseta2 = (Camiseta) CamisetaBuilder.builder()
+		Camiseta camiseta2 = CamisetaBuilder.builder()
 				.addTamanhoCamiseta(TamanhoCamiseta.G)
 				.addCorCamiseta("branca")
 				.addMarcaCamiseta("Kit")
@@ -45,7 +45,7 @@ public class Cadastro {
 		
 		pCont.adicionarProdutoNaLista(camiseta2);
 		
-		Camiseta camiseta3 = (Camiseta) CamisetaBuilder.builder()
+		Camiseta camiseta3 = CamisetaBuilder.builder()
 				.addTamanhoCamiseta(TamanhoCamiseta.GG)
 				.addCorCamiseta("preta")
 				.addMarcaCamiseta("Reg")
